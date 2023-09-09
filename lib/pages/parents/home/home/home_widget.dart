@@ -415,86 +415,66 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               alignment: AlignmentDirectional(0.00, 0.00),
-                              child: InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  context.pushNamed(
-                                    'transferFunds',
-                                    extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
-                                        hasTransition: true,
-                                        transitionType:
-                                            PageTransitionType.bottomToTop,
-                                        duration: Duration(milliseconds: 220),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 12.0, 12.0, 0.0),
+                                    child: Container(
+                                      width: 55.0,
+                                      height: 55.0,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFDFD2EE),
+                                        borderRadius:
+                                            BorderRadius.circular(50.0),
                                       ),
-                                    },
-                                  );
-                                },
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 12.0, 12.0, 0.0),
-                                      child: Container(
-                                        width: 55.0,
-                                        height: 55.0,
-                                        decoration: BoxDecoration(
-                                          color: Color(0xFFDFD2EE),
-                                          borderRadius:
-                                              BorderRadius.circular(50.0),
-                                        ),
-                                        alignment:
-                                            AlignmentDirectional(0.00, 0.00),
-                                        child: FaIcon(
-                                          FontAwesomeIcons.moneyCheck,
-                                          color: Color(0xFF5B30B5),
-                                          size: 28.0,
-                                        ),
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.moneyCheck,
+                                        color: Color(0xFF5B30B5),
+                                        size: 28.0,
                                       ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 8.0, 12.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          '8bnd6lco' /* Transfer */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color: Color(0xFF5B30B5),
-                                              fontWeight: FontWeight.w500,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 8.0, 12.0, 0.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        '8bnd6lco' /* Transfer */,
                                       ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: Color(0xFF5B30B5),
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 4.0, 12.0, 12.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          '7curto4s' /* Transfer pocket money to your ... */,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .grayLight,
-                                              fontSize: 12.0,
-                                              fontWeight: FontWeight.w300,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 4.0, 12.0, 12.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        '7curto4s' /* Transfer pocket money to your ... */,
                                       ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: FlutterFlowTheme.of(context)
+                                                .grayLight,
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.w300,
+                                          ),
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -509,86 +489,66 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               alignment: AlignmentDirectional(0.00, 0.00),
-                              child: InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  context.pushNamed(
-                                    'transferFunds',
-                                    extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
-                                        hasTransition: true,
-                                        transitionType:
-                                            PageTransitionType.bottomToTop,
-                                        duration: Duration(milliseconds: 220),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 12.0, 12.0, 0.0),
+                                    child: Container(
+                                      width: 55.0,
+                                      height: 55.0,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFDFD2EE),
+                                        borderRadius:
+                                            BorderRadius.circular(50.0),
                                       ),
-                                    },
-                                  );
-                                },
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 12.0, 12.0, 0.0),
-                                      child: Container(
-                                        width: 55.0,
-                                        height: 55.0,
-                                        decoration: BoxDecoration(
-                                          color: Color(0xFFDFD2EE),
-                                          borderRadius:
-                                              BorderRadius.circular(50.0),
-                                        ),
-                                        alignment:
-                                            AlignmentDirectional(0.00, 0.00),
-                                        child: FaIcon(
-                                          FontAwesomeIcons.userPlus,
-                                          color: Color(0xFF5B30B5),
-                                          size: 26.0,
-                                        ),
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.userPlus,
+                                        color: Color(0xFF5B30B5),
+                                        size: 26.0,
                                       ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 8.0, 12.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'wh3917wy' /* Add Child */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color: Color(0xFF5B30B5),
-                                              fontWeight: FontWeight.w500,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 8.0, 12.0, 0.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'wh3917wy' /* Add Child */,
                                       ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: Color(0xFF5B30B5),
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 4.0, 12.0, 12.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'wz4zzxld' /* Add child by scanning the QR c... */,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .grayLight,
-                                              fontSize: 12.0,
-                                              fontWeight: FontWeight.w300,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 4.0, 12.0, 12.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'wz4zzxld' /* Add child by scanning the QR c... */,
                                       ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: FlutterFlowTheme.of(context)
+                                                .grayLight,
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.w300,
+                                          ),
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
