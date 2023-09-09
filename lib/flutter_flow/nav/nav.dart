@@ -79,38 +79,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : RoleWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : LoginPageWidget(),
-        ),
-        FFRoute(
-          name: 'loginPage',
-          path: '/loginPage',
-          builder: (context, params) => LoginPageWidget(),
-        ),
-        FFRoute(
-          name: 'registerAccount',
-          path: '/registerAccount',
-          builder: (context, params) => RegisterAccountWidget(),
-        ),
-        FFRoute(
-          name: 'completeProfile',
-          path: '/completeProfile',
-          builder: (context, params) => CompleteProfileWidget(),
-        ),
-        FFRoute(
-          name: 'forgotPassword',
-          path: '/forgotPassword',
-          builder: (context, params) => ForgotPasswordWidget(),
-        ),
-        FFRoute(
-          name: 'onboarding',
-          path: '/onboarding',
-          builder: (context, params) => OnboardingWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : RoleWidget(),
         ),
         FFRoute(
           name: 'Set_Limit',
@@ -131,109 +106,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : ChallengeMainWidget(),
         ),
         FFRoute(
-          name: 'paymentDetails',
-          path: '/paymentDetails',
-          builder: (context, params) => PaymentDetailsWidget(
-            transactionDetails: params.getParam('transactionDetails',
-                ParamType.DocumentReference, false, ['transactions']),
-            userSpent: params.getParam(
-                'userSpent', ParamType.DocumentReference, false, ['users']),
-          ),
-        ),
-        FFRoute(
-          name: 'MY_profilePage',
-          path: '/mYProfilePage',
-          builder: (context, params) => MYProfilePageWidget(
-            userProfile: params.getParam(
-                'userProfile', ParamType.DocumentReference, false, ['users']),
-          ),
-        ),
-        FFRoute(
           name: 'Financial_Graph',
           path: '/financialGraph',
           builder: (context, params) => FinancialGraphWidget(
             budgetDetails: params.getParam('budgetDetails',
                 ParamType.DocumentReference, false, ['budgets']),
           ),
-        ),
-        FFRoute(
-          name: 'transferComplete',
-          path: '/transferComplete',
-          builder: (context, params) => TransferCompleteWidget(),
-        ),
-        FFRoute(
-          name: 'transferFunds',
-          path: '/transferFunds',
-          builder: (context, params) => TransferFundsWidget(),
-        ),
-        FFRoute(
-          name: 'requestFunds',
-          path: '/requestFunds',
-          builder: (context, params) => RequestFundsWidget(),
-        ),
-        FFRoute(
-          name: 'createBudget',
-          path: '/createBudget',
-          builder: (context, params) => CreateBudgetWidget(),
-        ),
-        FFRoute(
-          name: 'transaction_ADD',
-          path: '/transactionADD',
-          builder: (context, params) => TransactionADDWidget(),
-        ),
-        FFRoute(
-          name: 'transaction_EDIT',
-          path: '/transactionEDIT',
-          builder: (context, params) => TransactionEDITWidget(
-            transactionDetails: params.getParam('transactionDetails',
-                ParamType.DocumentReference, false, ['transactions']),
-          ),
-        ),
-        FFRoute(
-          name: 'editProfile',
-          path: '/editProfile',
-          builder: (context, params) => EditProfileWidget(
-            userProfile: params.getParam(
-                'userProfile', ParamType.DocumentReference, false, ['users']),
-          ),
-        ),
-        FFRoute(
-          name: 'changePassword',
-          path: '/changePassword',
-          builder: (context, params) => ChangePasswordWidget(),
-        ),
-        FFRoute(
-          name: 'notificationsSettings',
-          path: '/notificationsSettings',
-          builder: (context, params) => NotificationsSettingsWidget(),
-        ),
-        FFRoute(
-          name: 'privacyPolicy',
-          path: '/privacyPolicy',
-          builder: (context, params) => PrivacyPolicyWidget(),
-        ),
-        FFRoute(
-          name: 'tutorial_PROFILE',
-          path: '/tutorialPROFILE',
-          builder: (context, params) => TutorialPROFILEWidget(),
-        ),
-        FFRoute(
-          name: 'homePage_alt',
-          path: '/homePageAlt',
-          builder: (context, params) => HomePageAltWidget(),
-        ),
-        FFRoute(
-          name: 'budget_DELETE',
-          path: '/budgetDELETE',
-          builder: (context, params) => BudgetDELETEWidget(
-            budgetList: params.getParam(
-                'budgetList', ParamType.DocumentReference, false, ['budgets']),
-          ),
-        ),
-        FFRoute(
-          name: 'profilepage',
-          path: '/profilepage',
-          builder: (context, params) => ProfilepageWidget(),
         ),
         FFRoute(
           name: 'Financial_Tracker',
@@ -525,7 +403,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/loginPage';
+            return '/role';
           }
           return null;
         },

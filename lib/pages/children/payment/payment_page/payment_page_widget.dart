@@ -383,86 +383,66 @@ class _PaymentPageWidgetState extends State<PaymentPageWidget>
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               alignment: AlignmentDirectional(0.00, 0.00),
-                              child: InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  context.pushNamed(
-                                    'transferFunds',
-                                    extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
-                                        hasTransition: true,
-                                        transitionType:
-                                            PageTransitionType.bottomToTop,
-                                        duration: Duration(milliseconds: 220),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 12.0, 12.0, 0.0),
+                                    child: Container(
+                                      width: 55.0,
+                                      height: 55.0,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFDFD2EE),
+                                        borderRadius:
+                                            BorderRadius.circular(50.0),
                                       ),
-                                    },
-                                  );
-                                },
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 12.0, 12.0, 0.0),
-                                      child: Container(
-                                        width: 55.0,
-                                        height: 55.0,
-                                        decoration: BoxDecoration(
-                                          color: Color(0xFFDFD2EE),
-                                          borderRadius:
-                                              BorderRadius.circular(50.0),
-                                        ),
-                                        alignment:
-                                            AlignmentDirectional(0.00, 0.00),
-                                        child: FaIcon(
-                                          FontAwesomeIcons.solidCreditCard,
-                                          color: Color(0xFF5B30B5),
-                                          size: 28.0,
-                                        ),
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.solidCreditCard,
+                                        color: Color(0xFF5B30B5),
+                                        size: 28.0,
                                       ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 8.0, 12.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          '1x4tppkd' /* Finance */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color: Color(0xFF5B30B5),
-                                              fontWeight: FontWeight.w500,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 8.0, 12.0, 0.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        '1x4tppkd' /* Finance */,
                                       ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: Color(0xFF5B30B5),
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 4.0, 12.0, 12.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'bjn5e039' /* Track your transaction */,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .grayLight,
-                                              fontSize: 12.0,
-                                              fontWeight: FontWeight.w300,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 4.0, 12.0, 12.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'bjn5e039' /* Track your transaction */,
                                       ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: FlutterFlowTheme.of(context)
+                                                .grayLight,
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.w300,
+                                          ),
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -485,86 +465,67 @@ class _PaymentPageWidgetState extends State<PaymentPageWidget>
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 alignment: AlignmentDirectional(0.00, 0.00),
-                                child: InkWell(
-                                  splashColor: Colors.transparent,
-                                  focusColor: Colors.transparent,
-                                  hoverColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onTap: () async {
-                                    context.pushNamed(
-                                      'transferFunds',
-                                      extra: <String, dynamic>{
-                                        kTransitionInfoKey: TransitionInfo(
-                                          hasTransition: true,
-                                          transitionType:
-                                              PageTransitionType.bottomToTop,
-                                          duration: Duration(milliseconds: 220),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12.0, 12.0, 12.0, 0.0),
+                                      child: Container(
+                                        width: 55.0,
+                                        height: 55.0,
+                                        decoration: BoxDecoration(
+                                          color: Color(0xFFDFD2EE),
+                                          borderRadius:
+                                              BorderRadius.circular(50.0),
                                         ),
-                                      },
-                                    );
-                                  },
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 12.0, 12.0, 0.0),
-                                        child: Container(
-                                          width: 55.0,
-                                          height: 55.0,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xFFDFD2EE),
-                                            borderRadius:
-                                                BorderRadius.circular(50.0),
-                                          ),
-                                          alignment:
-                                              AlignmentDirectional(0.00, 0.00),
-                                          child: FaIcon(
-                                            FontAwesomeIcons.trophy,
-                                            color: Color(0xFF5B30B5),
-                                            size: 26.0,
-                                          ),
+                                        alignment:
+                                            AlignmentDirectional(0.00, 0.00),
+                                        child: FaIcon(
+                                          FontAwesomeIcons.trophy,
+                                          color: Color(0xFF5B30B5),
+                                          size: 26.0,
                                         ),
                                       ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 8.0, 12.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'yok1339e' /* Challenge */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Roboto',
-                                                color: Color(0xFF5B30B5),
-                                                fontWeight: FontWeight.w500,
-                                              ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12.0, 8.0, 12.0, 0.0),
+                                      child: Text(
+                                        FFLocalizations.of(context).getText(
+                                          'yok1339e' /* Challenge */,
                                         ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Roboto',
+                                              color: Color(0xFF5B30B5),
+                                              fontWeight: FontWeight.w500,
+                                            ),
                                       ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 4.0, 12.0, 12.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'pdrpxi4a' /* Complete the challenges */,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Roboto',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .grayLight,
-                                                fontSize: 12.0,
-                                                fontWeight: FontWeight.w300,
-                                              ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12.0, 4.0, 12.0, 12.0),
+                                      child: Text(
+                                        FFLocalizations.of(context).getText(
+                                          'pdrpxi4a' /* Complete the challenges */,
                                         ),
+                                        textAlign: TextAlign.center,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Roboto',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .grayLight,
+                                              fontSize: 12.0,
+                                              fontWeight: FontWeight.w300,
+                                            ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -590,86 +551,66 @@ class _PaymentPageWidgetState extends State<PaymentPageWidget>
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               alignment: AlignmentDirectional(0.00, 0.00),
-                              child: InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  context.pushNamed(
-                                    'transferFunds',
-                                    extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
-                                        hasTransition: true,
-                                        transitionType:
-                                            PageTransitionType.bottomToTop,
-                                        duration: Duration(milliseconds: 220),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 12.0, 12.0, 0.0),
+                                    child: Container(
+                                      width: 55.0,
+                                      height: 55.0,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFDFD2EE),
+                                        borderRadius:
+                                            BorderRadius.circular(50.0),
                                       ),
-                                    },
-                                  );
-                                },
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 12.0, 12.0, 0.0),
-                                      child: Container(
-                                        width: 55.0,
-                                        height: 55.0,
-                                        decoration: BoxDecoration(
-                                          color: Color(0xFFDFD2EE),
-                                          borderRadius:
-                                              BorderRadius.circular(50.0),
-                                        ),
-                                        alignment:
-                                            AlignmentDirectional(0.00, 0.00),
-                                        child: FaIcon(
-                                          FontAwesomeIcons.book,
-                                          color: Color(0xFF5B30B5),
-                                          size: 28.0,
-                                        ),
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.book,
+                                        color: Color(0xFF5B30B5),
+                                        size: 28.0,
                                       ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 8.0, 12.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'jsgo7own' /* Learning */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color: Color(0xFF5B30B5),
-                                              fontWeight: FontWeight.w500,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 8.0, 12.0, 0.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'jsgo7own' /* Learning */,
                                       ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: Color(0xFF5B30B5),
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 4.0, 12.0, 12.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'dg8979on' /* Learn the financial skills */,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .grayLight,
-                                              fontSize: 12.0,
-                                              fontWeight: FontWeight.w300,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 4.0, 12.0, 12.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'dg8979on' /* Learn the financial skills */,
                                       ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: FlutterFlowTheme.of(context)
+                                                .grayLight,
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.w300,
+                                          ),
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -684,86 +625,66 @@ class _PaymentPageWidgetState extends State<PaymentPageWidget>
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               alignment: AlignmentDirectional(0.00, 0.00),
-                              child: InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  context.pushNamed(
-                                    'transferFunds',
-                                    extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
-                                        hasTransition: true,
-                                        transitionType:
-                                            PageTransitionType.bottomToTop,
-                                        duration: Duration(milliseconds: 220),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 12.0, 12.0, 0.0),
+                                    child: Container(
+                                      width: 55.0,
+                                      height: 55.0,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFDFD2EE),
+                                        borderRadius:
+                                            BorderRadius.circular(50.0),
                                       ),
-                                    },
-                                  );
-                                },
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 12.0, 12.0, 0.0),
-                                      child: Container(
-                                        width: 55.0,
-                                        height: 55.0,
-                                        decoration: BoxDecoration(
-                                          color: Color(0xFFDFD2EE),
-                                          borderRadius:
-                                              BorderRadius.circular(50.0),
-                                        ),
-                                        alignment:
-                                            AlignmentDirectional(0.00, 0.00),
-                                        child: FaIcon(
-                                          FontAwesomeIcons.userCog,
-                                          color: Color(0xFF5B30B5),
-                                          size: 26.0,
-                                        ),
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.userCog,
+                                        color: Color(0xFF5B30B5),
+                                        size: 26.0,
                                       ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 8.0, 12.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'urzcygeg' /* Account */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color: Color(0xFF5B30B5),
-                                              fontWeight: FontWeight.w500,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 8.0, 12.0, 0.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'urzcygeg' /* Account */,
                                       ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: Color(0xFF5B30B5),
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 4.0, 12.0, 12.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          's0wkdpta' /* Manage your account */,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Roboto',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .grayLight,
-                                              fontSize: 12.0,
-                                              fontWeight: FontWeight.w300,
-                                            ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 4.0, 12.0, 12.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        's0wkdpta' /* Manage your account */,
                                       ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: FlutterFlowTheme.of(context)
+                                                .grayLight,
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.w300,
+                                          ),
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
